@@ -21,7 +21,7 @@ const moi = {
     competences: ["HTML", "CSS"]
 };
 console.log(moi)
-console.log(moi.prenom); // Affiche "Je m'appelle VotrePrénom"
+console.log("je m'appelle",moi.prenom); // Affiche "Je m'appelle VotrePrénom"
 moi.age = 19
 moi.ville = "Lyon"
 console.log(moi)
@@ -30,4 +30,14 @@ console.log(notes[0]); // Affiche 12 console.log(notes[1]); // Affiche 15
 console.log(notes.length); // Affiche 4
 for (let i = 0; i < notes.length; i++) {
     console.log("La note à l'indice " + i + " est " + notes[i]);
+}
+const classe = [
+    { prenom: 'Alice', age: 18 },
+    { prenom: 'Bob', age: 17 }
+]
+
+for (let i = 0; i < classe.length; i++) {
+    if (classe[i].age >= 18){
+        console.log("*a changer*est majeur")
+    }
 }
